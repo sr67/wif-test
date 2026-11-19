@@ -1,4 +1,3 @@
-```
 name: Test GCP WIF
 on:
   workflow_dispatch:
@@ -22,4 +21,4 @@ jobs:
       - name: Verify identity read-only
         run: |
           curl -sf -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://cloudresourcemanager.googleapis.com/v1/projects/bentoml-prod" | python3 -c "import sys,json; d=json.load(sys.stdin); print('Project:', d.get('name'), d.get('projectNumber'))"
-```
+
