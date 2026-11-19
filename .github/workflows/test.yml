@@ -1,5 +1,4 @@
-```
-yaml
+```yaml
 name: Test GCP WIF
 on:
   workflow_dispatch:
